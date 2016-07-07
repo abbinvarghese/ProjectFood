@@ -125,26 +125,9 @@
 			children = (
 				EDB916F81D2E883000A96798 /* AppDelegate.h */,
 				EDB916F91D2E883000A96798 /* AppDelegate.m */,
-				EDB9170C1D2E88DE00A96798 /* PFNearByViewController.h */,
-				EDB9170D1D2E88DE00A96798 /* PFNearByViewController.m */,
-				EDB9170F1D2E892000A96798 /* PFFavouritesViewController.h */,
-				EDB917101D2E892000A96798 /* PFFavouritesViewController.m */,
-				EDB917121D2E892D00A96798 /* PFAccountViewController.h */,
-				EDB917131D2E892D00A96798 /* PFAccountViewController.m */,
-				EDB917151D2E899300A96798 /* PFTabBarViewController.h */,
-				EDB917161D2E899300A96798 /* PFTabBarViewController.m */,
-				EDB917231D2E93ED00A96798 /* PFSignInViewController.h */,
-				EDB917241D2E93ED00A96798 /* PFSignInViewController.m */,
-				EDB917291D2E9ADF00A96798 /* PFLocationViewController.h */,
-				EDB9172A1D2E9ADF00A96798 /* PFLocationViewController.m */,
-				EDB9172C1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.h */,
-				EDB9172D1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.m */,
-				EDB9172F1D2E9D5100A96798 /* PFLocationPicker.h */,
-				EDB917301D2E9D5100A96798 /* PFLocationPicker.m */,
-				EDB917181D2E8A9300A96798 /* PFConstants.h */,
-				EDB917191D2E8A9300A96798 /* PFConstants.m */,
-				EDB917261D2E967C00A96798 /* PFManager.h */,
-				EDB917271D2E967C00A96798 /* PFManager.m */,
+				EDB917DF1D2ED60A00A96798 /* ViewControllers */,
+				EDB917E51D2ED65D00A96798 /* Modal */,
+				EDB917E81D2ED68D00A96798 /* UI Elements */,
 				EDB916FE1D2E883000A96798 /* Main.storyboard */,
 				EDB917011D2E883000A96798 /* Assets.xcassets */,
 				EDB917031D2E883000A96798 /* LaunchScreen.storyboard */,
@@ -161,6 +144,111 @@
 				EDB916F61D2E883000A96798 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDB917DF1D2ED60A00A96798 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDB917E01D2ED61900A96798 /* Near by */,
+				EDB917E11D2ED62800A96798 /* Fav */,
+				EDB917E21D2ED62E00A96798 /* Account */,
+				EDB917E31D2ED63700A96798 /* TabBar */,
+				EDB917E41D2ED64600A96798 /* Sign in */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EDB917E01D2ED61900A96798 /* Near by */ = {
+			isa = PBXGroup;
+			children = (
+				EDB9170C1D2E88DE00A96798 /* PFNearByViewController.h */,
+				EDB9170D1D2E88DE00A96798 /* PFNearByViewController.m */,
+			);
+			name = "Near by";
+			sourceTree = "<group>";
+		};
+		EDB917E11D2ED62800A96798 /* Fav */ = {
+			isa = PBXGroup;
+			children = (
+				EDB9170F1D2E892000A96798 /* PFFavouritesViewController.h */,
+				EDB917101D2E892000A96798 /* PFFavouritesViewController.m */,
+			);
+			name = Fav;
+			sourceTree = "<group>";
+		};
+		EDB917E21D2ED62E00A96798 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				EDB917121D2E892D00A96798 /* PFAccountViewController.h */,
+				EDB917131D2E892D00A96798 /* PFAccountViewController.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		EDB917E31D2ED63700A96798 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EDB917151D2E899300A96798 /* PFTabBarViewController.h */,
+				EDB917161D2E899300A96798 /* PFTabBarViewController.m */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		EDB917E41D2ED64600A96798 /* Sign in */ = {
+			isa = PBXGroup;
+			children = (
+				EDB917231D2E93ED00A96798 /* PFSignInViewController.h */,
+				EDB917241D2E93ED00A96798 /* PFSignInViewController.m */,
+				EDB917291D2E9ADF00A96798 /* PFLocationViewController.h */,
+				EDB9172A1D2E9ADF00A96798 /* PFLocationViewController.m */,
+			);
+			name = "Sign in";
+			sourceTree = "<group>";
+		};
+		EDB917E51D2ED65D00A96798 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				EDB917E61D2ED67100A96798 /* Location object */,
+				EDB917E71D2ED67F00A96798 /* Constants */,
+				EDB917261D2E967C00A96798 /* PFManager.h */,
+				EDB917271D2E967C00A96798 /* PFManager.m */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		EDB917E61D2ED67100A96798 /* Location object */ = {
+			isa = PBXGroup;
+			children = (
+				EDB9172C1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.h */,
+				EDB9172D1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.m */,
+			);
+			name = "Location object";
+			sourceTree = "<group>";
+		};
+		EDB917E71D2ED67F00A96798 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EDB917181D2E8A9300A96798 /* PFConstants.h */,
+				EDB917191D2E8A9300A96798 /* PFConstants.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		EDB917E81D2ED68D00A96798 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				EDB917E91D2ED6B100A96798 /* Location picker */,
+			);
+			name = "UI Elements";
+			sourceTree = "<group>";
+		};
+		EDB917E91D2ED6B100A96798 /* Location picker */ = {
+			isa = PBXGroup;
+			children = (
+				EDB9172F1D2E9D5100A96798 /* PFLocationPicker.h */,
+				EDB917301D2E9D5100A96798 /* PFLocationPicker.m */,
+			);
+			name = "Location picker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

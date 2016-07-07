@@ -99,10 +99,12 @@
                 GMSPlaceLikelihood *likelihood = [likelihoodList.likelihoods objectAtIndex:0];
                 GMSPlace* place = likelihood.place;
                 NSMutableDictionary *obj = [[NSMutableDictionary alloc]initWithGMSPlace:place];
-                if ([self.delegate respondsToSelector:@selector(PFLocationPicker:didCompleteWithLocation:)]) {
-                    [self.delegate PFLocationPicker:self didCompleteWithLocation:obj];
-                }
-                [self dismissViewControllerAnimated:YES completion:nil];
+
+                [self dismissViewControllerAnimated:YES completion:^{
+                    if ([self.delegate respondsToSelector:@selector(PFLocationPicker:didCompleteWithLocation:)]) {
+                        [self.delegate PFLocationPicker:self didCompleteWithLocation:obj];
+                    }
+                }];
             }
             else{
                 
@@ -121,11 +123,12 @@
         [[GMSPlacesClient sharedClient] lookUpPlaceID:prediction.placeID callback:^(GMSPlace * _Nullable result, NSError * _Nullable error) {
             if (error == nil) {
                 NSMutableDictionary *obj = [[NSMutableDictionary alloc]initWithGMSPlace:result];
-                if ([self.delegate respondsToSelector:@selector(PFLocationPicker:didCompleteWithLocation:)]) {
-                    [self.delegate PFLocationPicker:self didCompleteWithLocation:obj];
-                }
                 
-                [self dismissViewControllerAnimated:YES completion:nil];
+                [self dismissViewControllerAnimated:YES completion:^{
+                    if ([self.delegate respondsToSelector:@selector(PFLocationPicker:didCompleteWithLocation:)]) {
+                        [self.delegate PFLocationPicker:self didCompleteWithLocation:obj];
+                    }
+                }];
             }
             else{
                 
