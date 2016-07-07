@@ -81,6 +81,9 @@ NSString *const firstLaunchKey                  = @"firstLaunch";
 #pragma mark - Segue Keys -
 
 NSString *const signInSegueKey                  = @"signInSegueKey";
+NSString *const locationSegueKey                = @"locationSegueKey";
+NSString *const locationPickerSegueKey          = @"locationPickerSegueKey";
+NSString *const directLocationSegueKey          = @"directLocationSegueKey";
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

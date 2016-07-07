@@ -81,6 +81,9 @@ FOUNDATION_EXPORT NSString *const firstLaunchKey;
 #pragma mark - Segue Keys -
 
 FOUNDATION_EXPORT NSString *const signInSegueKey;
+FOUNDATION_EXPORT NSString *const locationSegueKey;
+FOUNDATION_EXPORT NSString *const locationPickerSegueKey;
+FOUNDATION_EXPORT NSString *const directLocationSegueKey;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40DD647892E9CBCF7D32DEFD /* libPods-ProjectFood.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7871B45FABE33A3C829D84A8 /* libPods-ProjectFood.a */; };
 		EDB916F71D2E883000A96798 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB916F61D2E883000A96798 /* main.m */; };
 		EDB916FA1D2E883000A96798 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB916F91D2E883000A96798 /* AppDelegate.m */; };
 		EDB917001D2E883000A96798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB916FE1D2E883000A96798 /* Main.storyboard */; };
@@ -17,9 +18,21 @@
 		EDB917141D2E892D00A96798 /* PFAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB917131D2E892D00A96798 /* PFAccountViewController.m */; };
 		EDB917171D2E899300A96798 /* PFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB917161D2E899300A96798 /* PFTabBarViewController.m */; };
 		EDB9171A1D2E8A9300A96798 /* PFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB917191D2E8A9300A96798 /* PFConstants.m */; };
+		EDB9171C1D2E8C0200A96798 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDB9171B1D2E8C0200A96798 /* GoogleService-Info.plist */; };
+		EDB917201D2E8D5000A96798 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB9171D1D2E8D5000A96798 /* FBSDKCoreKit.framework */; };
+		EDB917211D2E8D5000A96798 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB9171E1D2E8D5000A96798 /* FBSDKLoginKit.framework */; };
+		EDB917221D2E8D5000A96798 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB9171F1D2E8D5000A96798 /* FBSDKShareKit.framework */; };
+		EDB917251D2E93ED00A96798 /* PFSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB917241D2E93ED00A96798 /* PFSignInViewController.m */; };
+		EDB917281D2E967C00A96798 /* PFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB917271D2E967C00A96798 /* PFManager.m */; };
+		EDB9172B1D2E9ADF00A96798 /* PFLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB9172A1D2E9ADF00A96798 /* PFLocationViewController.m */; };
+		EDB9172E1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB9172D1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.m */; };
+		EDB917311D2E9D5100A96798 /* PFLocationPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB917301D2E9D5100A96798 /* PFLocationPicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E0ADD0448FA22D6AF68FDCD /* Pods-ProjectFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectFood.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectFood/Pods-ProjectFood.release.xcconfig"; sourceTree = "<group>"; };
+		7871B45FABE33A3C829D84A8 /* libPods-ProjectFood.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectFood.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F293AB38F12F2C9984F0B1 /* Pods-ProjectFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectFood/Pods-ProjectFood.debug.xcconfig"; sourceTree = "<group>"; };
 		EDB916F21D2E883000A96798 /* ProjectFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB916F61D2E883000A96798 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDB916F81D2E883000A96798 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,6 +51,20 @@
 		EDB917161D2E899300A96798 /* PFTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTabBarViewController.m; sourceTree = "<group>"; };
 		EDB917181D2E8A9300A96798 /* PFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFConstants.h; sourceTree = "<group>"; };
 		EDB917191D2E8A9300A96798 /* PFConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFConstants.m; sourceTree = "<group>"; };
+		EDB9171B1D2E8C0200A96798 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EDB9171D1D2E8D5000A96798 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		EDB9171E1D2E8D5000A96798 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		EDB9171F1D2E8D5000A96798 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		EDB917231D2E93ED00A96798 /* PFSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFSignInViewController.h; sourceTree = "<group>"; };
+		EDB917241D2E93ED00A96798 /* PFSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFSignInViewController.m; sourceTree = "<group>"; };
+		EDB917261D2E967C00A96798 /* PFManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFManager.h; sourceTree = "<group>"; };
+		EDB917271D2E967C00A96798 /* PFManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFManager.m; sourceTree = "<group>"; };
+		EDB917291D2E9ADF00A96798 /* PFLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFLocationViewController.h; sourceTree = "<group>"; };
+		EDB9172A1D2E9ADF00A96798 /* PFLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFLocationViewController.m; sourceTree = "<group>"; };
+		EDB9172C1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+TFALocation.h"; sourceTree = "<group>"; };
+		EDB9172D1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+TFALocation.m"; sourceTree = "<group>"; };
+		EDB9172F1D2E9D5100A96798 /* PFLocationPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFLocationPicker.h; sourceTree = "<group>"; };
+		EDB917301D2E9D5100A96798 /* PFLocationPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFLocationPicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +72,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB917221D2E8D5000A96798 /* FBSDKShareKit.framework in Frameworks */,
+				40DD647892E9CBCF7D32DEFD /* libPods-ProjectFood.a in Frameworks */,
+				EDB917201D2E8D5000A96798 /* FBSDKCoreKit.framework in Frameworks */,
+				EDB917211D2E8D5000A96798 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		772EBBD335FCE5FB2EA9CCA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9F293AB38F12F2C9984F0B1 /* Pods-ProjectFood.debug.xcconfig */,
+				2E0ADD0448FA22D6AF68FDCD /* Pods-ProjectFood.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		958E69378C622FAC08205846 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7871B45FABE33A3C829D84A8 /* libPods-ProjectFood.a */,
+				EDB9171D1D2E8D5000A96798 /* FBSDKCoreKit.framework */,
+				EDB9171E1D2E8D5000A96798 /* FBSDKLoginKit.framework */,
+				EDB9171F1D2E8D5000A96798 /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EDB916E91D2E883000A96798 = {
 			isa = PBXGroup;
 			children = (
 				EDB916F41D2E883000A96798 /* ProjectFood */,
 				EDB916F31D2E883000A96798 /* Products */,
+				772EBBD335FCE5FB2EA9CCA4 /* Pods */,
+				958E69378C622FAC08205846 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,12 +133,23 @@
 				EDB917131D2E892D00A96798 /* PFAccountViewController.m */,
 				EDB917151D2E899300A96798 /* PFTabBarViewController.h */,
 				EDB917161D2E899300A96798 /* PFTabBarViewController.m */,
+				EDB917231D2E93ED00A96798 /* PFSignInViewController.h */,
+				EDB917241D2E93ED00A96798 /* PFSignInViewController.m */,
+				EDB917291D2E9ADF00A96798 /* PFLocationViewController.h */,
+				EDB9172A1D2E9ADF00A96798 /* PFLocationViewController.m */,
+				EDB9172C1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.h */,
+				EDB9172D1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.m */,
+				EDB9172F1D2E9D5100A96798 /* PFLocationPicker.h */,
+				EDB917301D2E9D5100A96798 /* PFLocationPicker.m */,
 				EDB917181D2E8A9300A96798 /* PFConstants.h */,
 				EDB917191D2E8A9300A96798 /* PFConstants.m */,
+				EDB917261D2E967C00A96798 /* PFManager.h */,
+				EDB917271D2E967C00A96798 /* PFManager.m */,
 				EDB916FE1D2E883000A96798 /* Main.storyboard */,
 				EDB917011D2E883000A96798 /* Assets.xcassets */,
 				EDB917031D2E883000A96798 /* LaunchScreen.storyboard */,
 				EDB917061D2E883000A96798 /* Info.plist */,
+				EDB9171B1D2E8C0200A96798 /* GoogleService-Info.plist */,
 				EDB916F51D2E883000A96798 /* Supporting Files */,
 			);
 			path = ProjectFood;
@@ -106,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDB917091D2E883000A96798 /* Build configuration list for PBXNativeTarget "ProjectFood" */;
 			buildPhases = (
+				F46B2B0A522963558BEC9C41 /* [CP] Check Pods Manifest.lock */,
 				EDB916EE1D2E883000A96798 /* Sources */,
 				EDB916EF1D2E883000A96798 /* Frameworks */,
 				EDB916F01D2E883000A96798 /* Resources */,
+				4C150518EE8BB20C93DF81FA /* [CP] Embed Pods Frameworks */,
+				1EB0F71AACE12711CC253F39 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +192,7 @@
 		EDB916EA1D2E883000A96798 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PF;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Abbin Varghese";
 				TargetAttributes = {
@@ -157,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB917051D2E883000A96798 /* LaunchScreen.storyboard in Resources */,
+				EDB9171C1D2E8C0200A96798 /* GoogleService-Info.plist in Resources */,
 				EDB917021D2E883000A96798 /* Assets.xcassets in Resources */,
 				EDB917001D2E883000A96798 /* Main.storyboard in Resources */,
 			);
@@ -164,17 +233,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EB0F71AACE12711CC253F39 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectFood/Pods-ProjectFood-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C150518EE8BB20C93DF81FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectFood/Pods-ProjectFood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F46B2B0A522963558BEC9C41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EDB916EE1D2E883000A96798 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB917251D2E93ED00A96798 /* PFSignInViewController.m in Sources */,
 				EDB917141D2E892D00A96798 /* PFAccountViewController.m in Sources */,
 				EDB917111D2E892000A96798 /* PFFavouritesViewController.m in Sources */,
+				EDB9172E1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.m in Sources */,
 				EDB9171A1D2E8A9300A96798 /* PFConstants.m in Sources */,
+				EDB917281D2E967C00A96798 /* PFManager.m in Sources */,
 				EDB917171D2E899300A96798 /* PFTabBarViewController.m in Sources */,
 				EDB916FA1D2E883000A96798 /* AppDelegate.m in Sources */,
+				EDB9172B1D2E9ADF00A96798 /* PFLocationViewController.m in Sources */,
 				EDB9170E1D2E88DE00A96798 /* PFNearByViewController.m in Sources */,
+				EDB917311D2E9D5100A96798 /* PFLocationPicker.m in Sources */,
 				EDB916F71D2E883000A96798 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,8 +407,13 @@
 		};
 		EDB9170A1D2E883000A96798 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9F293AB38F12F2C9984F0B1 /* Pods-ProjectFood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ProjectFood/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -297,8 +424,13 @@
 		};
 		EDB9170B1D2E883000A96798 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0ADD0448FA22D6AF68FDCD /* Pods-ProjectFood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ProjectFood/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -326,6 +458,7 @@
 				EDB9170B1D2E883000A96798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

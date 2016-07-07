@@ -7,6 +7,10 @@
 //
 
 #import "PFTabBarViewController.h"
+#import "PFConstants.h"
+#import "PFManager.h"
+
+@import Firebase;
 
 @interface PFTabBarViewController ()
 
@@ -22,6 +26,12 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
+    if ([FIRAuth auth].currentUser == nil) {
+        [self performSegueWithIdentifier:signInSegueKey sender:self];
+    }
+    else if (![PFManager isUserLocationSet]) {
+        [self performSegueWithIdentifier:directLocationSegueKey sender:self];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
