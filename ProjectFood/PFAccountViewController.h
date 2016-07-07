@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PFAccountViewController.h
 //  ProjectFood
 //
 //  Created by Abbin Varghese on 07/07/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PFAccountViewController : UIViewController
 
 @end
-

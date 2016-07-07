@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		EDB916F71D2E883000A96798 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB916F61D2E883000A96798 /* main.m */; };
 		EDB916FA1D2E883000A96798 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB916F91D2E883000A96798 /* AppDelegate.m */; };
-		EDB916FD1D2E883000A96798 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB916FC1D2E883000A96798 /* ViewController.m */; };
 		EDB917001D2E883000A96798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB916FE1D2E883000A96798 /* Main.storyboard */; };
 		EDB917021D2E883000A96798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB917011D2E883000A96798 /* Assets.xcassets */; };
 		EDB917051D2E883000A96798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB917031D2E883000A96798 /* LaunchScreen.storyboard */; };
+		EDB9170E1D2E88DE00A96798 /* PFNearByViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB9170D1D2E88DE00A96798 /* PFNearByViewController.m */; };
+		EDB917111D2E892000A96798 /* PFFavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB917101D2E892000A96798 /* PFFavouritesViewController.m */; };
+		EDB917141D2E892D00A96798 /* PFAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB917131D2E892D00A96798 /* PFAccountViewController.m */; };
+		EDB917171D2E899300A96798 /* PFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB917161D2E899300A96798 /* PFTabBarViewController.m */; };
+		EDB9171A1D2E8A9300A96798 /* PFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB917191D2E8A9300A96798 /* PFConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +24,20 @@
 		EDB916F61D2E883000A96798 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDB916F81D2E883000A96798 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EDB916F91D2E883000A96798 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EDB916FB1D2E883000A96798 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EDB916FC1D2E883000A96798 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EDB916FF1D2E883000A96798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDB917011D2E883000A96798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDB917041D2E883000A96798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDB917061D2E883000A96798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB9170C1D2E88DE00A96798 /* PFNearByViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFNearByViewController.h; sourceTree = "<group>"; };
+		EDB9170D1D2E88DE00A96798 /* PFNearByViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFNearByViewController.m; sourceTree = "<group>"; };
+		EDB9170F1D2E892000A96798 /* PFFavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFFavouritesViewController.h; sourceTree = "<group>"; };
+		EDB917101D2E892000A96798 /* PFFavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFFavouritesViewController.m; sourceTree = "<group>"; };
+		EDB917121D2E892D00A96798 /* PFAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAccountViewController.h; sourceTree = "<group>"; };
+		EDB917131D2E892D00A96798 /* PFAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAccountViewController.m; sourceTree = "<group>"; };
+		EDB917151D2E899300A96798 /* PFTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTabBarViewController.h; sourceTree = "<group>"; };
+		EDB917161D2E899300A96798 /* PFTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTabBarViewController.m; sourceTree = "<group>"; };
+		EDB917181D2E8A9300A96798 /* PFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFConstants.h; sourceTree = "<group>"; };
+		EDB917191D2E8A9300A96798 /* PFConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +72,16 @@
 			children = (
 				EDB916F81D2E883000A96798 /* AppDelegate.h */,
 				EDB916F91D2E883000A96798 /* AppDelegate.m */,
-				EDB916FB1D2E883000A96798 /* ViewController.h */,
-				EDB916FC1D2E883000A96798 /* ViewController.m */,
+				EDB9170C1D2E88DE00A96798 /* PFNearByViewController.h */,
+				EDB9170D1D2E88DE00A96798 /* PFNearByViewController.m */,
+				EDB9170F1D2E892000A96798 /* PFFavouritesViewController.h */,
+				EDB917101D2E892000A96798 /* PFFavouritesViewController.m */,
+				EDB917121D2E892D00A96798 /* PFAccountViewController.h */,
+				EDB917131D2E892D00A96798 /* PFAccountViewController.m */,
+				EDB917151D2E899300A96798 /* PFTabBarViewController.h */,
+				EDB917161D2E899300A96798 /* PFTabBarViewController.m */,
+				EDB917181D2E8A9300A96798 /* PFConstants.h */,
+				EDB917191D2E8A9300A96798 /* PFConstants.m */,
 				EDB916FE1D2E883000A96798 /* Main.storyboard */,
 				EDB917011D2E883000A96798 /* Assets.xcassets */,
 				EDB917031D2E883000A96798 /* LaunchScreen.storyboard */,
@@ -149,8 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB916FD1D2E883000A96798 /* ViewController.m in Sources */,
+				EDB917141D2E892D00A96798 /* PFAccountViewController.m in Sources */,
+				EDB917111D2E892000A96798 /* PFFavouritesViewController.m in Sources */,
+				EDB9171A1D2E8A9300A96798 /* PFConstants.m in Sources */,
+				EDB917171D2E899300A96798 /* PFTabBarViewController.m in Sources */,
 				EDB916FA1D2E883000A96798 /* AppDelegate.m in Sources */,
+				EDB9170E1D2E88DE00A96798 /* PFNearByViewController.m in Sources */,
 				EDB916F71D2E883000A96798 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +288,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ProjectFood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ThePaadamCompany.ProjectFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ProjectFood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ThePaadamCompany.ProjectFood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
