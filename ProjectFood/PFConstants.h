@@ -15,6 +15,7 @@
 #pragma mark - Restaurant Keys -
 
 FOUNDATION_EXPORT NSString *const restaurantNameKey;
+FOUNDATION_EXPORT NSString *const restaurantNameCappedKey;
 FOUNDATION_EXPORT NSString *const restaurantlocationKey;
 FOUNDATION_EXPORT NSString *const restaurantPhoneNumberKey;
 FOUNDATION_EXPORT NSString *const restaurantWorkingFromKey;
@@ -25,6 +26,7 @@ FOUNDATION_EXPORT NSString *const restaurantWorkingTillKey;
 #pragma mark - Fuud Keys -
 
 FOUNDATION_EXPORT NSString *const fuudTitleKey;
+FOUNDATION_EXPORT NSString *const fuudTitleCappedKey;
 FOUNDATION_EXPORT NSString *const fuudDescriptionKey;
 FOUNDATION_EXPORT NSString *const fuudPriceKey;
 FOUNDATION_EXPORT NSString *const fuudRatingKey;
@@ -64,6 +66,7 @@ FOUNDATION_EXPORT NSString *const feedbackFileURLKey;
 #pragma mark - Database Path Keys -
 
 FOUNDATION_EXPORT NSString *const fuudPathKey;
+FOUNDATION_EXPORT NSString *const restaurentPathKey;
 FOUNDATION_EXPORT NSString *const storagePathKey;
 FOUNDATION_EXPORT NSString *const userPathKey;
 FOUNDATION_EXPORT NSString *const messagesPathKey;
@@ -84,6 +87,9 @@ FOUNDATION_EXPORT NSString *const signInSegueKey;
 FOUNDATION_EXPORT NSString *const locationSegueKey;
 FOUNDATION_EXPORT NSString *const locationPickerSegueKey;
 FOUNDATION_EXPORT NSString *const directLocationSegueKey;
+FOUNDATION_EXPORT NSString *const addFirstViewControllerSegue;
+FOUNDATION_EXPORT NSString *const addSecondViewControllerSegue;
+FOUNDATION_EXPORT NSString *const itemPickerSegue;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

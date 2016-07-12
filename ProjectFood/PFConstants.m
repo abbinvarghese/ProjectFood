@@ -15,6 +15,7 @@
 #pragma mark - Restaurant Keys -
 
 NSString *const restaurantNameKey               = @"restaurantName";
+NSString *const restaurantNameCappedKey         = @"restaurantNameCapped";
 NSString *const restaurantlocationKey           = @"restaurantlocation";
 NSString *const restaurantPhoneNumberKey        = @"restaurantPhoneNumber";
 NSString *const restaurantWorkingFromKey        = @"restaurantWorkingFrom";
@@ -25,6 +26,7 @@ NSString *const restaurantWorkingTillKey        = @"restaurantWorkingTill";
 #pragma mark - Fuud Keys -
 
 NSString *const fuudTitleKey                    = @"fuudTitle";
+NSString *const fuudTitleCappedKey              = @"fuudTitleCapped";
 NSString *const fuudDescriptionKey              = @"fuudDescription";
 NSString *const fuudPriceKey                    = @"fuudPrice";
 NSString *const fuudRatingKey                   = @"fuudRating";
@@ -64,6 +66,7 @@ NSString *const feedbackFileURLKey              = @"feedbackFileURL";
 #pragma mark - Database Path Keys -
 
 NSString *const fuudPathKey                     = @"fuuds";
+NSString *const restaurentPathKey               = @"restaurents";
 NSString *const storagePathKey                  = @"gs://uncle-bun.appspot.com/";
 NSString *const userPathKey                     = @"users";
 NSString *const messagesPathKey                 = @"messages";
@@ -84,6 +87,9 @@ NSString *const signInSegueKey                  = @"signInSegueKey";
 NSString *const locationSegueKey                = @"locationSegueKey";
 NSString *const locationPickerSegueKey          = @"locationPickerSegueKey";
 NSString *const directLocationSegueKey          = @"directLocationSegueKey";
+NSString *const addFirstViewControllerSegue     = @"addFirstViewControllerSegue";
+NSString *const addSecondViewControllerSegue    = @"addSecondViewControllerSegue";
+NSString *const itemPickerSegue                 = @"itemPickerSegue";
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

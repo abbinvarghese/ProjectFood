@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		40DD647892E9CBCF7D32DEFD /* libPods-ProjectFood.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7871B45FABE33A3C829D84A8 /* libPods-ProjectFood.a */; };
+		ED0F671A1D327E5500BD7096 /* PFTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0F67191D327E5500BD7096 /* PFTextViewCell.m */; };
+		ED0F671D1D32C00300BD7096 /* PFAddSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0F671C1D32C00300BD7096 /* PFAddSecondViewController.m */; };
+		ED0F67201D32CC4800BD7096 /* PFRestaurantTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0F671F1D32CC4800BD7096 /* PFRestaurantTextFieldCell.m */; };
+		ED3D343C1D33794D00B6A6D5 /* PFChooseLocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D343B1D33794D00B6A6D5 /* PFChooseLocationTableViewCell.m */; };
+		ED3D34401D337B7C00B6A6D5 /* TLTagsControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D343F1D337B7C00B6A6D5 /* TLTagsControl.m */; };
+		ED3D34431D337B9D00B6A6D5 /* PFTagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D34421D337B9D00B6A6D5 /* PFTagTableViewCell.m */; };
+		ED3D34471D33B99800B6A6D5 /* PFItemPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D34461D33B99800B6A6D5 /* PFItemPicker.m */; };
+		ED41D2571D2F9E8600B2196B /* PFImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = ED41D2561D2F9E8600B2196B /* PFImagePicker.m */; };
+		ED41D25C1D2FA28C00B2196B /* PFImagePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED41D25B1D2FA28C00B2196B /* PFImagePickerCell.m */; };
+		ED41D2621D2FB72F00B2196B /* NSIndexSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = ED41D25F1D2FB72F00B2196B /* NSIndexSet+Convenience.m */; };
+		ED41D2631D2FB72F00B2196B /* UICollectionView+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = ED41D2611D2FB72F00B2196B /* UICollectionView+Convenience.m */; };
+		ED41D26C1D2FFEE100B2196B /* PFAddFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED41D26B1D2FFEE100B2196B /* PFAddFirstViewController.m */; };
+		ED41D2701D3008DA00B2196B /* PFImagePreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED41D26F1D3008DA00B2196B /* PFImagePreviewCell.m */; };
+		ED41D2731D30095800B2196B /* PFTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED41D2721D30095800B2196B /* PFTextFieldCell.m */; };
+		ED41D2761D30171000B2196B /* PFImagePreviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED41D2751D30171000B2196B /* PFImagePreviewCollectionViewCell.m */; };
 		EDB916F71D2E883000A96798 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB916F61D2E883000A96798 /* main.m */; };
 		EDB916FA1D2E883000A96798 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB916F91D2E883000A96798 /* AppDelegate.m */; };
 		EDB917001D2E883000A96798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB916FE1D2E883000A96798 /* Main.storyboard */; };
@@ -33,6 +48,36 @@
 		2E0ADD0448FA22D6AF68FDCD /* Pods-ProjectFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectFood.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectFood/Pods-ProjectFood.release.xcconfig"; sourceTree = "<group>"; };
 		7871B45FABE33A3C829D84A8 /* libPods-ProjectFood.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectFood.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F293AB38F12F2C9984F0B1 /* Pods-ProjectFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectFood/Pods-ProjectFood.debug.xcconfig"; sourceTree = "<group>"; };
+		ED0F67181D327E5500BD7096 /* PFTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTextViewCell.h; sourceTree = "<group>"; };
+		ED0F67191D327E5500BD7096 /* PFTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTextViewCell.m; sourceTree = "<group>"; };
+		ED0F671B1D32C00300BD7096 /* PFAddSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAddSecondViewController.h; sourceTree = "<group>"; };
+		ED0F671C1D32C00300BD7096 /* PFAddSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAddSecondViewController.m; sourceTree = "<group>"; };
+		ED0F671E1D32CC4800BD7096 /* PFRestaurantTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRestaurantTextFieldCell.h; sourceTree = "<group>"; };
+		ED0F671F1D32CC4800BD7096 /* PFRestaurantTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRestaurantTextFieldCell.m; sourceTree = "<group>"; };
+		ED3D343A1D33794D00B6A6D5 /* PFChooseLocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFChooseLocationTableViewCell.h; sourceTree = "<group>"; };
+		ED3D343B1D33794D00B6A6D5 /* PFChooseLocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFChooseLocationTableViewCell.m; sourceTree = "<group>"; };
+		ED3D343E1D337B7C00B6A6D5 /* TLTagsControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTagsControl.h; sourceTree = "<group>"; };
+		ED3D343F1D337B7C00B6A6D5 /* TLTagsControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTagsControl.m; sourceTree = "<group>"; };
+		ED3D34411D337B9D00B6A6D5 /* PFTagTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTagTableViewCell.h; sourceTree = "<group>"; };
+		ED3D34421D337B9D00B6A6D5 /* PFTagTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTagTableViewCell.m; sourceTree = "<group>"; };
+		ED3D34451D33B99800B6A6D5 /* PFItemPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFItemPicker.h; sourceTree = "<group>"; };
+		ED3D34461D33B99800B6A6D5 /* PFItemPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFItemPicker.m; sourceTree = "<group>"; };
+		ED41D2551D2F9E8600B2196B /* PFImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFImagePicker.h; sourceTree = "<group>"; };
+		ED41D2561D2F9E8600B2196B /* PFImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFImagePicker.m; sourceTree = "<group>"; };
+		ED41D25A1D2FA28C00B2196B /* PFImagePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFImagePickerCell.h; sourceTree = "<group>"; };
+		ED41D25B1D2FA28C00B2196B /* PFImagePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFImagePickerCell.m; sourceTree = "<group>"; };
+		ED41D25E1D2FB72F00B2196B /* NSIndexSet+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+Convenience.h"; sourceTree = "<group>"; };
+		ED41D25F1D2FB72F00B2196B /* NSIndexSet+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+Convenience.m"; sourceTree = "<group>"; };
+		ED41D2601D2FB72F00B2196B /* UICollectionView+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Convenience.h"; sourceTree = "<group>"; };
+		ED41D2611D2FB72F00B2196B /* UICollectionView+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Convenience.m"; sourceTree = "<group>"; };
+		ED41D26A1D2FFEE100B2196B /* PFAddFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFAddFirstViewController.h; sourceTree = "<group>"; };
+		ED41D26B1D2FFEE100B2196B /* PFAddFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAddFirstViewController.m; sourceTree = "<group>"; };
+		ED41D26E1D3008DA00B2196B /* PFImagePreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFImagePreviewCell.h; sourceTree = "<group>"; };
+		ED41D26F1D3008DA00B2196B /* PFImagePreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFImagePreviewCell.m; sourceTree = "<group>"; };
+		ED41D2711D30095800B2196B /* PFTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFTextFieldCell.h; sourceTree = "<group>"; };
+		ED41D2721D30095800B2196B /* PFTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFTextFieldCell.m; sourceTree = "<group>"; };
+		ED41D2741D30171000B2196B /* PFImagePreviewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFImagePreviewCollectionViewCell.h; sourceTree = "<group>"; };
+		ED41D2751D30171000B2196B /* PFImagePreviewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFImagePreviewCollectionViewCell.m; sourceTree = "<group>"; };
 		EDB916F21D2E883000A96798 /* ProjectFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB916F61D2E883000A96798 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDB916F81D2E883000A96798 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +147,85 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ED3D343D1D337B6F00B6A6D5 /* Tag Controls */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D343E1D337B7C00B6A6D5 /* TLTagsControl.h */,
+				ED3D343F1D337B7C00B6A6D5 /* TLTagsControl.m */,
+			);
+			name = "Tag Controls";
+			sourceTree = "<group>";
+		};
+		ED3D34441D33B69700B6A6D5 /* Item picker */ = {
+			isa = PBXGroup;
+			children = (
+				ED3D34451D33B99800B6A6D5 /* PFItemPicker.h */,
+				ED3D34461D33B99800B6A6D5 /* PFItemPicker.m */,
+			);
+			name = "Item picker";
+			sourceTree = "<group>";
+		};
+		ED41D2581D2FA25C00B2196B /* Image picker */ = {
+			isa = PBXGroup;
+			children = (
+				ED41D2551D2F9E8600B2196B /* PFImagePicker.h */,
+				ED41D2561D2F9E8600B2196B /* PFImagePicker.m */,
+			);
+			name = "Image picker";
+			sourceTree = "<group>";
+		};
+		ED41D2591D2FA26A00B2196B /* CollectionView cells */ = {
+			isa = PBXGroup;
+			children = (
+				ED41D25A1D2FA28C00B2196B /* PFImagePickerCell.h */,
+				ED41D25B1D2FA28C00B2196B /* PFImagePickerCell.m */,
+				ED41D2741D30171000B2196B /* PFImagePreviewCollectionViewCell.h */,
+				ED41D2751D30171000B2196B /* PFImagePreviewCollectionViewCell.m */,
+			);
+			name = "CollectionView cells";
+			sourceTree = "<group>";
+		};
+		ED41D25D1D2FB6F800B2196B /* Image picker convenience */ = {
+			isa = PBXGroup;
+			children = (
+				ED41D25E1D2FB72F00B2196B /* NSIndexSet+Convenience.h */,
+				ED41D25F1D2FB72F00B2196B /* NSIndexSet+Convenience.m */,
+				ED41D2601D2FB72F00B2196B /* UICollectionView+Convenience.h */,
+				ED41D2611D2FB72F00B2196B /* UICollectionView+Convenience.m */,
+			);
+			name = "Image picker convenience";
+			sourceTree = "<group>";
+		};
+		ED41D2691D2FFEC800B2196B /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				ED41D26A1D2FFEE100B2196B /* PFAddFirstViewController.h */,
+				ED41D26B1D2FFEE100B2196B /* PFAddFirstViewController.m */,
+				ED0F671B1D32C00300BD7096 /* PFAddSecondViewController.h */,
+				ED0F671C1D32C00300BD7096 /* PFAddSecondViewController.m */,
+			);
+			name = Add;
+			sourceTree = "<group>";
+		};
+		ED41D26D1D3008AB00B2196B /* TableView cells */ = {
+			isa = PBXGroup;
+			children = (
+				ED41D26E1D3008DA00B2196B /* PFImagePreviewCell.h */,
+				ED41D26F1D3008DA00B2196B /* PFImagePreviewCell.m */,
+				ED41D2711D30095800B2196B /* PFTextFieldCell.h */,
+				ED41D2721D30095800B2196B /* PFTextFieldCell.m */,
+				ED0F67181D327E5500BD7096 /* PFTextViewCell.h */,
+				ED0F67191D327E5500BD7096 /* PFTextViewCell.m */,
+				ED0F671E1D32CC4800BD7096 /* PFRestaurantTextFieldCell.h */,
+				ED0F671F1D32CC4800BD7096 /* PFRestaurantTextFieldCell.m */,
+				ED3D343A1D33794D00B6A6D5 /* PFChooseLocationTableViewCell.h */,
+				ED3D343B1D33794D00B6A6D5 /* PFChooseLocationTableViewCell.m */,
+				ED3D34411D337B9D00B6A6D5 /* PFTagTableViewCell.h */,
+				ED3D34421D337B9D00B6A6D5 /* PFTagTableViewCell.m */,
+			);
+			name = "TableView cells";
+			sourceTree = "<group>";
+		};
 		EDB916E91D2E883000A96798 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +273,7 @@
 		EDB917DF1D2ED60A00A96798 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				ED41D2691D2FFEC800B2196B /* Add */,
 				EDB917E01D2ED61900A96798 /* Near by */,
 				EDB917E11D2ED62800A96798 /* Fav */,
 				EDB917E21D2ED62E00A96798 /* Account */,
@@ -208,6 +333,7 @@
 		EDB917E51D2ED65D00A96798 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				ED41D25D1D2FB6F800B2196B /* Image picker convenience */,
 				EDB917E61D2ED67100A96798 /* Location object */,
 				EDB917E71D2ED67F00A96798 /* Constants */,
 				EDB917261D2E967C00A96798 /* PFManager.h */,
@@ -237,7 +363,12 @@
 		EDB917E81D2ED68D00A96798 /* UI Elements */ = {
 			isa = PBXGroup;
 			children = (
+				ED3D34441D33B69700B6A6D5 /* Item picker */,
+				ED3D343D1D337B6F00B6A6D5 /* Tag Controls */,
+				ED41D26D1D3008AB00B2196B /* TableView cells */,
+				ED41D2591D2FA26A00B2196B /* CollectionView cells */,
 				EDB917E91D2ED6B100A96798 /* Location picker */,
+				ED41D2581D2FA25C00B2196B /* Image picker */,
 			);
 			name = "UI Elements";
 			sourceTree = "<group>";
@@ -375,17 +506,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB917251D2E93ED00A96798 /* PFSignInViewController.m in Sources */,
+				ED0F671A1D327E5500BD7096 /* PFTextViewCell.m in Sources */,
+				ED3D34431D337B9D00B6A6D5 /* PFTagTableViewCell.m in Sources */,
 				EDB917141D2E892D00A96798 /* PFAccountViewController.m in Sources */,
 				EDB917111D2E892000A96798 /* PFFavouritesViewController.m in Sources */,
+				ED41D2761D30171000B2196B /* PFImagePreviewCollectionViewCell.m in Sources */,
+				ED3D343C1D33794D00B6A6D5 /* PFChooseLocationTableViewCell.m in Sources */,
+				ED41D25C1D2FA28C00B2196B /* PFImagePickerCell.m in Sources */,
+				ED41D2621D2FB72F00B2196B /* NSIndexSet+Convenience.m in Sources */,
+				ED3D34471D33B99800B6A6D5 /* PFItemPicker.m in Sources */,
 				EDB9172E1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.m in Sources */,
+				ED0F67201D32CC4800BD7096 /* PFRestaurantTextFieldCell.m in Sources */,
+				ED41D2631D2FB72F00B2196B /* UICollectionView+Convenience.m in Sources */,
 				EDB9171A1D2E8A9300A96798 /* PFConstants.m in Sources */,
 				EDB917281D2E967C00A96798 /* PFManager.m in Sources */,
 				EDB917171D2E899300A96798 /* PFTabBarViewController.m in Sources */,
+				ED41D2731D30095800B2196B /* PFTextFieldCell.m in Sources */,
+				ED3D34401D337B7C00B6A6D5 /* TLTagsControl.m in Sources */,
+				ED41D2701D3008DA00B2196B /* PFImagePreviewCell.m in Sources */,
+				ED0F671D1D32C00300BD7096 /* PFAddSecondViewController.m in Sources */,
+				ED41D26C1D2FFEE100B2196B /* PFAddFirstViewController.m in Sources */,
 				EDB916FA1D2E883000A96798 /* AppDelegate.m in Sources */,
 				EDB9172B1D2E9ADF00A96798 /* PFLocationViewController.m in Sources */,
 				EDB9170E1D2E88DE00A96798 /* PFNearByViewController.m in Sources */,
 				EDB917311D2E9D5100A96798 /* PFLocationPicker.m in Sources */,
 				EDB916F71D2E883000A96798 /* main.m in Sources */,
+				ED41D2571D2F9E8600B2196B /* PFImagePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
