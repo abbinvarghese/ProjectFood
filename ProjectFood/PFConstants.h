@@ -86,6 +86,7 @@ FOUNDATION_EXPORT NSString *const firstLaunchKey;
 FOUNDATION_EXPORT NSString *const signInSegueKey;
 FOUNDATION_EXPORT NSString *const locationSegueKey;
 FOUNDATION_EXPORT NSString *const locationPickerSegueKey;
+FOUNDATION_EXPORT NSString *const mapSegueKey;
 FOUNDATION_EXPORT NSString *const directLocationSegueKey;
 FOUNDATION_EXPORT NSString *const addFirstViewControllerSegue;
 FOUNDATION_EXPORT NSString *const addSecondViewControllerSegue;

@@ -619,6 +619,7 @@
                     <connections>
                         <outlet property="restTableView" destination="CSD-zq-gpn" id="3Cd-ed-1E8"/>
                         <segue destination="mTI-gb-o0u" kind="presentation" identifier="itemPickerSegue" id="hFk-1v-jgz"/>
+                        <segue destination="LQU-90-Ki2" kind="presentation" identifier="locationPickerSegueKey" id="kW6-Cu-SAO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTB-F4-hyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -643,7 +644,7 @@
                                 <items>
                                     <navigationItem id="W8V-1t-mgr">
                                         <barButtonItem key="rightBarButtonItem" title="Cancel" id="v7c-VB-AbY">
-                                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <connections>
                                                 <action selector="dismiss:" destination="mTI-gb-o0u" id="R2D-a3-OsR"/>
                                             </connections>
@@ -802,6 +803,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lNj-5P-Aap"/>
-        <segue reference="hFk-1v-jgz"/>
+        <segue reference="30B-0Q-rOl"/>
+        <segue reference="sYL-Qm-uay"/>
     </inferredMetricsTieBreakers>
 </document>

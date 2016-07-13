@@ -86,6 +86,7 @@ NSString *const firstLaunchKey                  = @"firstLaunch";
 NSString *const signInSegueKey                  = @"signInSegueKey";
 NSString *const locationSegueKey                = @"locationSegueKey";
 NSString *const locationPickerSegueKey          = @"locationPickerSegueKey";
+NSString *const mapSegueKey                     = @"mapSegueKey";
 NSString *const directLocationSegueKey          = @"directLocationSegueKey";
 NSString *const addFirstViewControllerSegue     = @"addFirstViewControllerSegue";
 NSString *const addSecondViewControllerSegue    = @"addSecondViewControllerSegue";

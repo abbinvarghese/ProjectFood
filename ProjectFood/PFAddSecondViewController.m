@@ -11,11 +11,14 @@
 #import "PFTagTableViewCell.h"
 #import "PFConstants.h"
 #import "PFItemPicker.h"
+#import "PFLocationPicker.h"
 
-@interface PFAddSecondViewController ()<UITextFieldDelegate,TLTagsControlDelegate,PFItemPickerDelegate>
+@interface PFAddSecondViewController ()<UITextFieldDelegate,TLTagsControlDelegate,PFItemPickerDelegate,PFLocationPickerDelegate>
 
 @property (nonatomic, strong) NSString *restaurantName;
 @property (strong, nonatomic) NSMutableArray * restaurantPhoneNumber;
+@property (strong, nonatomic) NSMutableDictionary * restaurantLocation;
+
 @property (strong, nonatomic) IBOutlet UITableView *restTableView;
 
 @end
@@ -37,6 +40,10 @@
     if ([segue.identifier isEqualToString:itemPickerSegue]){
         PFItemPicker *vc = segue.destinationViewController;
         vc.pickerMode = PFPickerModeTypeRestaurant;
+        vc.delegate = self;
+    }
+    else if ([segue.identifier isEqualToString:locationPickerSegueKey]){
+        PFLocationPicker *vc = segue.destinationViewController;
         vc.delegate = self;
     }
 }
@@ -138,7 +145,7 @@
         [self performSegueWithIdentifier:itemPickerSegue sender:self];
     }
     else if (indexPath.section == 1){
-        
+        [self performSegueWithIdentifier:locationPickerSegueKey sender:self];
     }
     else if (indexPath.section == 3 && indexPath.row == 0){
         
@@ -181,6 +188,17 @@
 
 -(void)PFItemPicker:(PFItemPicker *)picker didFinishWithExistingItem:(NSDictionary *)item{
     
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark - PFItemPickerDelegate -
+
+
+-(void)PFLocationPicker:(PFLocationPicker *)picker didCompleteWithLocation:(NSMutableDictionary *)location{
+    PFRestaurantTextFieldCell *cell = [_restTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
+    cell.cellTextField.text = location[locationNameKey];
+    _restaurantLocation = location;
 }
 
 
