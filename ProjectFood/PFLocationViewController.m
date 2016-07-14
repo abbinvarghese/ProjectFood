@@ -32,8 +32,7 @@
 - (IBAction)detectLocation:(id)sender {
     [[GMSPlacesClient sharedClient] currentPlaceWithCallback:^(GMSPlaceLikelihoodList * _Nullable likelihoodList, NSError * _Nullable error) {
         if (error == nil) {
-            GMSPlaceLikelihood *likelihood = [likelihoodList.likelihoods objectAtIndex:0];
-            GMSPlace* place = likelihood.place;
+            GMSPlace* place = [[[likelihoodList likelihoods] firstObject] place];;
             NSMutableDictionary *obj = [[NSMutableDictionary alloc]initWithGMSPlace:place];
             NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
             [defaults setObject:obj forKey:userLocationKey];

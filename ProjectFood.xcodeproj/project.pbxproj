@@ -11,6 +11,7 @@
 		ED0F671A1D327E5500BD7096 /* PFTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0F67191D327E5500BD7096 /* PFTextViewCell.m */; };
 		ED0F671D1D32C00300BD7096 /* PFAddSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0F671C1D32C00300BD7096 /* PFAddSecondViewController.m */; };
 		ED0F67201D32CC4800BD7096 /* PFRestaurantTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0F671F1D32CC4800BD7096 /* PFRestaurantTextFieldCell.m */; };
+		ED3251471D3622D9006835DA /* PFMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3251461D3622D9006835DA /* PFMapViewController.m */; };
 		ED3D343C1D33794D00B6A6D5 /* PFChooseLocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D343B1D33794D00B6A6D5 /* PFChooseLocationTableViewCell.m */; };
 		ED3D34401D337B7C00B6A6D5 /* TLTagsControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D343F1D337B7C00B6A6D5 /* TLTagsControl.m */; };
 		ED3D34431D337B9D00B6A6D5 /* PFTagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3D34421D337B9D00B6A6D5 /* PFTagTableViewCell.m */; };
@@ -54,6 +55,8 @@
 		ED0F671C1D32C00300BD7096 /* PFAddSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFAddSecondViewController.m; sourceTree = "<group>"; };
 		ED0F671E1D32CC4800BD7096 /* PFRestaurantTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRestaurantTextFieldCell.h; sourceTree = "<group>"; };
 		ED0F671F1D32CC4800BD7096 /* PFRestaurantTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRestaurantTextFieldCell.m; sourceTree = "<group>"; };
+		ED3251451D3622D9006835DA /* PFMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFMapViewController.h; sourceTree = "<group>"; };
+		ED3251461D3622D9006835DA /* PFMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFMapViewController.m; sourceTree = "<group>"; };
 		ED3D343A1D33794D00B6A6D5 /* PFChooseLocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFChooseLocationTableViewCell.h; sourceTree = "<group>"; };
 		ED3D343B1D33794D00B6A6D5 /* PFChooseLocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFChooseLocationTableViewCell.m; sourceTree = "<group>"; };
 		ED3D343E1D337B7C00B6A6D5 /* TLTagsControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTagsControl.h; sourceTree = "<group>"; };
@@ -145,6 +148,15 @@
 				EDB9171F1D2E8D5000A96798 /* FBSDKShareKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED3251441D3622C1006835DA /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				ED3251451D3622D9006835DA /* PFMapViewController.h */,
+				ED3251461D3622D9006835DA /* PFMapViewController.m */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		ED3D343D1D337B6F00B6A6D5 /* Tag Controls */ = {
@@ -363,6 +375,7 @@
 		EDB917E81D2ED68D00A96798 /* UI Elements */ = {
 			isa = PBXGroup;
 			children = (
+				ED3251441D3622C1006835DA /* Map */,
 				ED3D34441D33B69700B6A6D5 /* Item picker */,
 				ED3D343D1D337B6F00B6A6D5 /* Tag Controls */,
 				ED41D26D1D3008AB00B2196B /* TableView cells */,
@@ -516,6 +529,7 @@
 				ED41D2621D2FB72F00B2196B /* NSIndexSet+Convenience.m in Sources */,
 				ED3D34471D33B99800B6A6D5 /* PFItemPicker.m in Sources */,
 				EDB9172E1D2E9B6600A96798 /* NSMutableDictionary+TFALocation.m in Sources */,
+				ED3251471D3622D9006835DA /* PFMapViewController.m in Sources */,
 				ED0F67201D32CC4800BD7096 /* PFRestaurantTextFieldCell.m in Sources */,
 				ED41D2631D2FB72F00B2196B /* UICollectionView+Convenience.m in Sources */,
 				EDB9171A1D2E8A9300A96798 /* PFConstants.m in Sources */,

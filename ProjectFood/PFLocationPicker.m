@@ -32,6 +32,7 @@
         NSLocale *currentLocale = [NSLocale currentLocale];  // get the current locale.
         NSString *countryCode = [currentLocale objectForKey:NSLocaleCountryCode];
         filter.country = countryCode;
+        filter.type = kGMSPlacesAutocompleteTypeFilterCity;
         self.fetcher = [[GMSAutocompleteFetcher alloc] initWithBounds:nil filter:filter];
         self.fetcher.delegate = self;
     });
@@ -96,8 +97,7 @@
     if (indexPath.section == 0) {
         [[GMSPlacesClient sharedClient] currentPlaceWithCallback:^(GMSPlaceLikelihoodList * _Nullable likelihoodList, NSError * _Nullable error) {
             if (error == nil) {
-                GMSPlaceLikelihood *likelihood = [likelihoodList.likelihoods objectAtIndex:0];
-                GMSPlace* place = likelihood.place;
+                GMSPlace* place = [[[likelihoodList likelihoods] firstObject] place];;
                 NSMutableDictionary *obj = [[NSMutableDictionary alloc]initWithGMSPlace:place];
 
                 [self dismissViewControllerAnimated:YES completion:^{
@@ -163,6 +163,9 @@
 }
 
 
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    [_searchBar resignFirstResponder];
+}
 
 /*
 #pragma mark - Navigation

@@ -619,12 +619,30 @@
                     <connections>
                         <outlet property="restTableView" destination="CSD-zq-gpn" id="3Cd-ed-1E8"/>
                         <segue destination="mTI-gb-o0u" kind="presentation" identifier="itemPickerSegue" id="hFk-1v-jgz"/>
-                        <segue destination="LQU-90-Ki2" kind="presentation" identifier="locationPickerSegueKey" id="kW6-Cu-SAO"/>
+                        <segue destination="HGk-Lb-UHf" kind="show" identifier="mapSegueKey" id="Aqg-o4-hPc"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTB-F4-hyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4339" y="-147"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="7yF-4K-Pat">
+            <objects>
+                <viewController id="HGk-Lb-UHf" customClass="PFMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4n8-l5-ltA"/>
+                        <viewControllerLayoutGuide type="bottom" id="0uv-1p-FpG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GHM-kK-3Di">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4v8-73-qo6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4339" y="509"/>
         </scene>
         <!--Item Picker-->
         <scene sceneID="jz6-eg-WDb">
@@ -715,7 +733,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCz-Jp-nDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4962" y="-147"/>
+            <point key="canvasLocation" x="5066" y="-147"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="hbQ-hH-jvy">
@@ -803,7 +821,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lNj-5P-Aap"/>
-        <segue reference="30B-0Q-rOl"/>
-        <segue reference="sYL-Qm-uay"/>
+        <segue reference="hFk-1v-jgz"/>
     </inferredMetricsTieBreakers>
 </document>
