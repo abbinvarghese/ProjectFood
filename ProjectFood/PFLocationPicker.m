@@ -7,17 +7,13 @@
 //
 
 #import "PFLocationPicker.h"
-#import "NSMutableDictionary+TFALocation.h"
 
-@import GoogleMaps;
-
-@interface PFLocationPicker ()<UITableViewDelegate,UITableViewDataSource,GMSAutocompleteFetcherDelegate,UISearchBarDelegate>
+@interface PFLocationPicker ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
 
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UITableView *listTableView;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
-@property (strong, nonatomic) GMSAutocompleteFetcher *fetcher;
 @property (strong, nonatomic) NSArray *listArray;
 
 @end
@@ -26,17 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        GMSAutocompleteFilter *filter = [[GMSAutocompleteFilter alloc] init];
-        NSLocale *currentLocale = [NSLocale currentLocale];  // get the current locale.
-        NSString *countryCode = [currentLocale objectForKey:NSLocaleCountryCode];
-        filter.country = countryCode;
-        filter.type = kGMSPlacesAutocompleteTypeFilterCity;
-        self.fetcher = [[GMSAutocompleteFetcher alloc] initWithBounds:nil filter:filter];
-        self.fetcher.delegate = self;
-    });
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -75,9 +60,7 @@
         cell.imageView.image = [UIImage imageNamed:@"Current Location"];
     }
     else{
-        GMSAutocompletePrediction *prediction = [self.listArray objectAtIndex:indexPath.row];
-        cell.textLabel.attributedText = prediction.attributedPrimaryText;
-        cell.detailTextLabel.attributedText = prediction.attributedSecondaryText;
+
     }
     return cell;
 }
@@ -95,86 +78,28 @@
     [self.view endEditing:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 0) {
-        [[GMSPlacesClient sharedClient] currentPlaceWithCallback:^(GMSPlaceLikelihoodList * _Nullable likelihoodList, NSError * _Nullable error) {
-            if (error == nil) {
-                GMSPlace* place = [[[likelihoodList likelihoods] firstObject] place];;
-                NSMutableDictionary *obj = [[NSMutableDictionary alloc]initWithGMSPlace:place];
-
-                [self dismissViewControllerAnimated:YES completion:^{
-                    if ([self.delegate respondsToSelector:@selector(PFLocationPicker:didCompleteWithLocation:)]) {
-                        [self.delegate PFLocationPicker:self didCompleteWithLocation:obj];
-                    }
-                }];
+        [self dismissViewControllerAnimated:YES completion:^{
+            if ([self.delegate respondsToSelector:@selector(PFLocationPicker:didCompleteWithLocation:)]) {
+                [self.delegate PFLocationPicker:self didCompleteWithLocation:nil];
             }
-            else{
-                
-                UIAlertController *alert =[UIAlertController alertControllerWithTitle:@"Error" message:@"Failed to get your current location" preferredStyle:UIAlertControllerStyleAlert];
-                UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-                [alert addAction:ok];
-                [self presentViewController:alert animated:YES completion:nil];
-            }
-            
         }];
     }
     else{
-        
-        GMSAutocompletePrediction *prediction = [self.listArray objectAtIndex:indexPath.row];
-        
-        [[GMSPlacesClient sharedClient] lookUpPlaceID:prediction.placeID callback:^(GMSPlace * _Nullable result, NSError * _Nullable error) {
-            if (error == nil) {
-                NSMutableDictionary *obj = [[NSMutableDictionary alloc]initWithGMSPlace:result];
-                
-                [self dismissViewControllerAnimated:YES completion:^{
-                    if ([self.delegate respondsToSelector:@selector(PFLocationPicker:didCompleteWithLocation:)]) {
-                        [self.delegate PFLocationPicker:self didCompleteWithLocation:obj];
-                    }
-                }];
-            }
-            else{
-                
-                UIAlertController *alert =[UIAlertController alertControllerWithTitle:@"Error" message:@"Failed to get location" preferredStyle:UIAlertControllerStyleAlert];
-                UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-                [alert addAction:ok];
-                [self presentViewController:alert animated:YES completion:nil];
+        [self dismissViewControllerAnimated:YES completion:^{
+            if ([self.delegate respondsToSelector:@selector(PFLocationPicker:didCompleteWithLocation:)]) {
+                [self.delegate PFLocationPicker:self didCompleteWithLocation:nil];
             }
         }];
     }
 }
+
 
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     self.label.text = @"";
-    [self.fetcher sourceTextHasChanged:searchText];
 }
-
-- (void)didAutocompleteWithPredictions:(NSArray *)predictions {
-    
-    if (predictions.count>0) {
-        self.label.text = @"";
-    }
-    else{
-        self.label.text = @"No results found";
-    }
-    self.listArray = predictions;
-    [self.listTableView reloadData];
-}
-
-- (void)didFailAutocompleteWithError:(NSError *)error {
-    self.label.text = @"No results found";
-}
-
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     [_searchBar resignFirstResponder];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

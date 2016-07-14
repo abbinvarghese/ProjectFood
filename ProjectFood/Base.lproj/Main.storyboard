@@ -637,10 +637,46 @@
                     <view key="view" contentMode="scaleToFill" id="GHM-kK-3Di">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r3E-AB-NhF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DXS-N3-n5Y" appends="YES" id="mLk-0D-WGW"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TsZ-eK-aOy">
+                                <rect key="frame" x="552" y="552" width="33" height="33"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="Xm8-GQ-RKj"/>
+                                    <constraint firstAttribute="height" constant="33" id="eiz-9D-1bP"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="currentLocation:" destination="HGk-Lb-UHf" eventType="touchUpInside" id="Jvp-Rz-qiB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TsZ-eK-aOy" secondAttribute="trailing" constant="15" id="5cX-Ti-dGn"/>
+                            <constraint firstItem="r3E-AB-NhF" firstAttribute="leading" secondItem="GHM-kK-3Di" secondAttribute="leading" id="5wC-go-NCG"/>
+                            <constraint firstAttribute="bottom" secondItem="TsZ-eK-aOy" secondAttribute="bottom" constant="15" id="A9D-KF-SCS"/>
+                            <constraint firstItem="r3E-AB-NhF" firstAttribute="top" secondItem="GHM-kK-3Di" secondAttribute="top" id="KnO-t9-WqA"/>
+                            <constraint firstAttribute="bottom" secondItem="r3E-AB-NhF" secondAttribute="bottom" id="X1H-0q-jcs"/>
+                            <constraint firstAttribute="trailing" secondItem="r3E-AB-NhF" secondAttribute="trailing" id="ft9-WE-D2z"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="r3E-AB-NhF" id="ZiQ-tj-jCt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4v8-73-qo6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="DXS-N3-n5Y">
+                    <connections>
+                        <action selector="didLongPressMap:" destination="HGk-Lb-UHf" id="YWb-sP-7MI"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4339" y="509"/>
         </scene>

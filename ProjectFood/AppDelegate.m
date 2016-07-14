@@ -11,7 +11,6 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @import Firebase;
-@import GoogleMaps;
 
 @interface AppDelegate ()
 
@@ -26,9 +25,7 @@
     
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
-    
-    [GMSServices provideAPIKey:@"AIzaSyCXFkb6BcMXwbzx0F2JUjMqiLjWcVCb3Gk"];
-    
+//    
 //    NSError *error;
 //    [[FIRAuth auth] signOut:&error];
 //    if (!error) {

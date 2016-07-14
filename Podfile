@@ -13,7 +13,5 @@ pod 'Firebase/Database'
 pod 'Firebase/Storage'
 pod 'Firebase/RemoteConfig'
 pod 'SDWebImage', '~>3.7'
-pod 'GoogleMaps'
-pod 'AFNetworking', '~> 3.0'
 
 end

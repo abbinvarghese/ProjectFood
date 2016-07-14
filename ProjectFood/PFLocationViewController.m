@@ -7,11 +7,8 @@
 //
 
 #import "PFLocationViewController.h"
-#import "NSMutableDictionary+TFALocation.h"
 #import "PFConstants.h"
 #import "PFLocationPicker.h"
-
-@import GoogleMaps;
 
 @interface PFLocationViewController ()<PFLocationPickerDelegate>
 
@@ -30,27 +27,12 @@
 }
 
 - (IBAction)detectLocation:(id)sender {
-    [[GMSPlacesClient sharedClient] currentPlaceWithCallback:^(GMSPlaceLikelihoodList * _Nullable likelihoodList, NSError * _Nullable error) {
-        if (error == nil) {
-            GMSPlace* place = [[[likelihoodList likelihoods] firstObject] place];;
-            NSMutableDictionary *obj = [[NSMutableDictionary alloc]initWithGMSPlace:place];
-            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-            [defaults setObject:obj forKey:userLocationKey];
-            [defaults setBool:YES forKey:firstLaunchKey];
-            [defaults synchronize];
-            
-            [self dismissViewControllerAnimated:YES completion:nil];
-        }
-        else{
-            
-            UIAlertController *alert =[UIAlertController alertControllerWithTitle:@"Error" message:@"Failed to get your current location" preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-            [alert addAction:ok];
-            [self presentViewController:alert animated:YES completion:nil];
-        }
-        
-    }];
-
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    [defaults setObject:nil forKey:userLocationKey];
+//    [defaults setBool:YES forKey:firstLaunchKey];
+//    [defaults synchronize];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -61,10 +43,10 @@
 }
 
 -(void)PFLocationPicker:(PFLocationPicker *)picker didCompleteWithLocation:(NSMutableDictionary *)location{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:location forKey:userLocationKey];
-    [defaults setBool:YES forKey:firstLaunchKey];
-    [defaults synchronize];
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    [defaults setObject:location forKey:userLocationKey];
+//    [defaults setBool:YES forKey:firstLaunchKey];
+//    [defaults synchronize];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
